@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectfx.NewEntryClass">
+   <children>
+      <Label fx:id="newEntrylabel" alignment="CENTER" layoutX="253.0" layoutY="30.0" prefHeight="27.0" prefWidth="141.0" text="New Entry Lable">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ComboBox fx:id="newEntryComboBox" layoutX="26.0" layoutY="200.0" prefHeight="25.0" prefWidth="547.0" promptText="Choose category" />
+      <TextField fx:id="newEntryTitle" layoutX="26.0" layoutY="73.0" prefHeight="25.0" prefWidth="541.0" promptText="Add title" />
+      <TextField fx:id="newEntryURL" layoutX="26.0" layoutY="126.0" prefHeight="31.0" prefWidth="541.0" promptText="Add url" />
+      <TextField fx:id="newEntryDescription" alignment="TOP_LEFT" layoutX="26.0" layoutY="244.0" prefHeight="95.0" prefWidth="547.0" promptText="Add description" />
+      <Button fx:id="newEntryFinishButton" layoutX="278.0" layoutY="352.0" mnemonicParsing="false" onAction="#newEntryDataWriting" text="finish" />
+      <Button fx:id="backButton" layoutX="480.0" layoutY="352.0" mnemonicParsing="false" onAction="#backButtonAction" text="Back" />
+      <Label fx:id="emptyTextfieldWarning" layoutX="26.0" layoutY="31.0" onInputMethodTextChanged="#newEntryDataWriting" prefHeight="26.0" prefWidth="210.0" textFill="#ee0000">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

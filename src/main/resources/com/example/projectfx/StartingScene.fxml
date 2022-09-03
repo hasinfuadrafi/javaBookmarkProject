@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectfx.StartingSceneController">
+   <children>
+      <Button fx:id="addButtonInStartingScene" layoutX="333.0" layoutY="355.0" mnemonicParsing="false" onAction="#addButtonInStartingSceneAction" prefHeight="37.0" prefWidth="65.0" style="-fx-background-radius: 20;" text="ADD" />
+      <ListView fx:id="startingSceneListView" editable="true" layoutX="28.0" layoutY="32.0" prefHeight="301.0" prefWidth="401.0" />
+      <Button fx:id="logOut" layoutX="35.0" layoutY="356.0" mnemonicParsing="false" onAction="#logOutAction" prefHeight="31.0" prefWidth="65.0" text="LogOut" />
+      <Button fx:id="startingSceneRefreshButton" layoutX="203.0" layoutY="361.0" mnemonicParsing="false" onAction="#startingSceneRefreshButtonAction" text="Refresh" />
+   </children>
+</AnchorPane>
