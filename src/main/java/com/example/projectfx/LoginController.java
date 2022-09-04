@@ -13,6 +13,9 @@ import java.io.IOException;
 public class LoginController {
     @FXML
     private Label loginPageLable;
+    
+    @FXML
+    pirvate Label newLabelForGit;
 
     @FXML
     private PasswordField loginPagePassword;
